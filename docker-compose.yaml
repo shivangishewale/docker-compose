@@ -1,0 +1,8 @@
+version: '3'
+services:
+   service_one:
+     image: 'tomcat:9'
+     ports:
+     - "8081-8084:8080"
+     volumes:
+     - "/mnt:/usr/local/tomcat/webapps"
